@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoloNow.Web.Admin.UI", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoloNow.Web.Admin.UI.Tests", "src\FoloNow.Web.Admin.UI.Tests\FoloNow.Web.Admin.UI.Tests.csproj", "{444198D2-55E5-48DB-9D29-80247F783ECB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoloNow.Web.Admin.UI.Configuration", "FoloNow.Web.Admin.UI.Configuration\FoloNow.Web.Admin.UI.Configuration.csproj", "{F167D236-CE08-4EF4-A8FE-C6BFDF3556EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{444198D2-55E5-48DB-9D29-80247F783ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{444198D2-55E5-48DB-9D29-80247F783ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{444198D2-55E5-48DB-9D29-80247F783ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F167D236-CE08-4EF4-A8FE-C6BFDF3556EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F167D236-CE08-4EF4-A8FE-C6BFDF3556EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F167D236-CE08-4EF4-A8FE-C6BFDF3556EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F167D236-CE08-4EF4-A8FE-C6BFDF3556EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A10C3B36-86C5-486B-9CE2-A952EBBDB11A} = {5F9EE5C0-530E-4C7E-9145-532C82781562}
 		{B285F163-5A1A-480C-94CE-87685CB9D4EF} = {5F9EE5C0-530E-4C7E-9145-532C82781562}
+		{F167D236-CE08-4EF4-A8FE-C6BFDF3556EC} = {5F9EE5C0-530E-4C7E-9145-532C82781562}
 		{A9B84A36-3AB1-4241-A879-A8CDD6E32F2E} = {43DCCB73-D957-49E9-BBB4-CEBC9D93A459}
 		{444198D2-55E5-48DB-9D29-80247F783ECB} = {43DCCB73-D957-49E9-BBB4-CEBC9D93A459}
 	EndGlobalSection

@@ -14,6 +14,32 @@ namespace FoloNow.Web.Admin.UI
             bundles.Add(new ScriptBundle("~/bundles/angularroute").Include(
                         "~/Scripts/angular-route.js"));
 
+
+            bundles.Add(new ScriptBundle("~/bundles/angular-resource").Include(
+                        "~/Scripts/angular-resource.js"));
+           
+            bundles.Add(new ScriptBundle("~/bundles/angular-ui").Include("~/Scripts/angular-ui/ui-bootstrap.min.js"));
+
+            //TODO: Move dynamic read code to framework 
+            const string App = "~/App",
+                infrastructure = "~/App/Infrastructure",
+                common = "~/App/Common",
+                management = "~/App/Management";
+                         // = "~/App/Gl",
+                         //Scheduler = "~/App/Scheduler",
+                         //Report = "~/App/Report",
+                         //System = "~/App/System",
+                         //Security = "~/App/Security",
+                         //Profiles = "~/App/Profiles",
+                         //Batch = "~/App/Batch",
+                         //Vendor = "~/App/Vendor",
+                         //Stocks = "~/App/Stocks";
+
+            bundles.Add(new ScriptBundle("~/bundles/App/js").IncludeDirectory(App, "*.js", true));
+
+            bundles.Add(new ScriptBundle("~/bundles/Apps").Include(
+                        "~/App/app.js"));
+         
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 

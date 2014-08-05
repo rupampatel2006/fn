@@ -1,5 +1,5 @@
 ﻿
-appRoot.controller('DemoController', function ($scope, $location, $resource) {
+mainApp.controller('DemoController', function ($scope, $location, $resource) {
 
     var userResource = $resource('/api/users', {}, { update: { method: 'PUT' } });
     $scope.usersList = [];

@@ -206,7 +206,6 @@
     <Content Include="App\contact.js" />
     <Content Include="App\demo.js" />
     <Content Include="App\directives.js" />
-    <Content Include="App\main.js" />
     <Content Include="App\services.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -281,6 +280,10 @@
     <Content Include="Scripts\angular-scenario.js" />
     <Content Include="Scripts\angular-touch.js" />
     <Content Include="Scripts\angular-touch.min.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.min.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\errors.json" />
@@ -628,7 +631,10 @@
     <Content Include="Scripts\version.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\Common\" />
+    <Folder Include="App\Management\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\ng-grid\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

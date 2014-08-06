@@ -44,6 +44,16 @@
     </li>
 </ol>*@
 
+<div >
+    <div ng-hide="isSpecificPage()" data-ng-cloak class="no-print">
+        <section ng-include="'App/Common/views/header.html'" id="header" class="top-header"></section>
+
+        <aside data-ng-include="'App/Common/views/nav.html'" id="nav-container"></aside>
+    </div>
+
+    <div class="view-container">
+        <section id="content" class="animate-fade-up"> <div ng-view=""></div></section>
+    </div>
+</div>
 
 
-<div ng-view=""></div>

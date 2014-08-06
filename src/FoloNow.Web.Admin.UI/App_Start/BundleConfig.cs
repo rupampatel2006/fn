@@ -17,7 +17,10 @@ namespace FoloNow.Web.Admin.UI
 
             bundles.Add(new ScriptBundle("~/bundles/angular-resource").Include(
                         "~/Scripts/angular-resource.js"));
-           
+
+            bundles.Add(new ScriptBundle("~/bundles/angular-animate").Include(
+                         "~/Scripts/angular-animate.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/angular-ui").Include("~/Scripts/angular-ui/ui-bootstrap.min.js"));
 
             //TODO: Move dynamic read code to framework 
@@ -37,6 +40,8 @@ namespace FoloNow.Web.Admin.UI
 
             bundles.Add(new ScriptBundle("~/bundles/App/js").IncludeDirectory(App, "*.js", true));
 
+            bundles.Add(new ScriptBundle("~/bundles/App/Common/js").IncludeDirectory(common, "*.js", true));
+
             bundles.Add(new ScriptBundle("~/bundles/Apps").Include(
                         "~/App/app.js"));
          
@@ -55,6 +60,12 @@ namespace FoloNow.Web.Admin.UI
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+            bundles.Add(new StyleBundle("~/Content/themes/folonow/css").Include("~/Content/themes/folonow/main.css"));
+
+            bundles.Add(new StyleBundle("~/Content/themes/folonow/font-awesome/css").Include("~/Content/themes/folonow/font-awesome/css/font-awesome.css"));
+
+            bundles.Add(new StyleBundle("~/Content/themes/folonow/weather-icons/css").Include("~/Content/themes/folonow/weather-icons/css/weather-icons.css"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
@@ -70,6 +81,7 @@ namespace FoloNow.Web.Admin.UI
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
+
         }
     }
 }

@@ -1,6 +1,15 @@
 ﻿// Main configuration file. Sets up AngularJS module and routes and any other config objects
 
-var mainApp = angular.module('mainApp', ['ngRoute', 'ngResource']);     //Define the main module
+var mainApp = angular.module('mainApp', [
+    //Angular Module
+    'ngRoute',
+    'ngResource',
+    'ngAnimate',
+    //3rd party modules
+    'ui.bootstrap',
+    //Custom modules
+    'systemApp'
+]);     //Define the main module
 
 mainApp.config(['$routeProvider', function ($routeProvider) {
         //Setup routes to load partial templates from server. TemplateUrl is the location for the server view (Razor .cshtml view)

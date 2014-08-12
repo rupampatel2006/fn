@@ -8,7 +8,8 @@ var mainApp = angular.module('mainApp', [
     //3rd party modules
     'ui.bootstrap',
     //Custom modules
-    'systemApp'
+    'systemApp',
+    'foloNow.directives'
 ]);     //Define the main module
 
 mainApp.config(['$routeProvider', function ($routeProvider) {

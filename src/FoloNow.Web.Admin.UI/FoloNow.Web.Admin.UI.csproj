@@ -212,6 +212,7 @@
     <Content Include="App\app.js" />
     <Content Include="App\Common\controllers\AppCtrl.js" />
     <Content Include="App\Common\controllers\NavCtrl.js" />
+    <Content Include="App\Common\directives\commonDirectives.js" />
     <Content Include="App\Common\systemApp.js" />
     <Content Include="App\Common\views\header.html" />
     <Content Include="App\Common\views\nav.html" />
@@ -661,7 +662,6 @@
     <Content Include="Scripts\version.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\Common\directives\" />
     <Folder Include="App\Common\services\" />
     <Folder Include="App\Management\" />
     <Folder Include="App_Data\" />

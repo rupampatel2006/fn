@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using FoloNow.Database.Entities;
+﻿using System.Data.Entity;
+using FoloNow.Database.Models.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FoloNow.Database.Tests
@@ -15,14 +13,14 @@ namespace FoloNow.Database.Tests
             System.Data.Entity.Database.SetInitializer<EFContext>(new CreateDatabaseIfNotExists<EFContext>());
             using (var context = new EFContext())
             {
-                //context.Database.Create();
+                context.Database.CreateIfNotExists();
                 Customer customer = new Customer
                 {
                     Name = "Raviendra",
                     Email = "raviendra@test.com",
                     
                 };
-                //context.Entry(customer).State = (EntityState) System.Data.EntityState.Added;
+                context.Entry(customer).State = (EntityState) System.Data.EntityState.Added;
                 context.SaveChanges();
             }
         }

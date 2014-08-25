@@ -62,13 +62,13 @@
       <Project>{89B139B3-4B1A-4AE3-BF12-D0609A16F9F4}</Project>
       <Name>JM.Database</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Database\FoloNaw.Database\FoloNow.Database.csproj">
+      <Project>{ad8f45ff-6343-4f0e-9fe6-0db436523d2b}</Project>
+      <Name>FoloNow.Database</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Database\FoloNow.Database.Models\FoloNow.Database.Models.csproj">
       <Project>{98b0ccaa-9a43-4edf-8840-5b055d0b693c}</Project>
       <Name>FoloNow.Database.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Database\FoloNow.Database\FoloNow.Database.csproj">
-      <Project>{c8a92ae3-4598-42c8-bd29-aa9cf3da7c60}</Project>
-      <Name>FoloNow.Database</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

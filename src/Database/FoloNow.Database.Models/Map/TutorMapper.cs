@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity.ModelConfiguration;
+﻿using System.Data.Entity.ModelConfiguration;
 using FoloNow.Database.Models.Entities;
 
 namespace FoloNow.Database.Models.Map
@@ -8,11 +7,11 @@ namespace FoloNow.Database.Models.Map
     {
         public TutorMapper()
         {
-            ToTable("Tutors");
+            ToTable("Tutor");
 
-            HasKey(s => s.Id);
-            Property(s => s.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            Property(s => s.Id).IsRequired();
+            //HasKey(s => s.Id);
+            //Property(s => s.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            //Property(s => s.Id).IsRequired();
 
             Property(s => s.Email).IsRequired();
             Property(s => s.Email).HasMaxLength(255);

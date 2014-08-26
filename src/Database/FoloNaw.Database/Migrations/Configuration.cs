@@ -20,7 +20,7 @@ namespace FoloNow.Database.Migrations
             //  to avoid creating duplicate seed data. E.g.
             //
             DbSet<Customer> set = context.Set<Customer>();
-            //set.AddOrUpdate(new Customer {Name = "Andrew Peters", Email = "abc@gmail.com"});
+            set.AddOrUpdate(new Customer {Name = "test", Email = "abc@gmail.com"});
             //  //new Person { FullName = "Brice Lambson" },
             //  //new Person { FullName = "Rowan Miller" }
             //);

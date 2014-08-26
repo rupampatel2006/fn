@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity.ModelConfiguration;
+﻿using System.Data.Entity.ModelConfiguration;
 using FoloNow.Database.Models.Entities;
 
 namespace FoloNow.Database.Models.Map
@@ -8,11 +7,11 @@ namespace FoloNow.Database.Models.Map
     {
         public EnrollmentMapper()
         {
-            ToTable("Enrollments");
+            ToTable("Enrollment");
 
-            HasKey(e => e.Id);
-            Property(e => e.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            Property(e => e.Id).IsRequired();
+            //HasKey(e => e.Id);
+            //Property(e => e.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            //Property(e => e.Id).IsRequired();
 
             Property(e => e.EnrollmentDate).IsRequired();
             Property(e => e.EnrollmentDate).HasColumnType("smalldatetime");

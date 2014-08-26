@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity.ModelConfiguration;
+﻿using System.Data.Entity.ModelConfiguration;
 using FoloNow.Database.Models.Entities;
 
 namespace FoloNow.Database.Models.Map
@@ -8,11 +7,11 @@ namespace FoloNow.Database.Models.Map
     {
         public CourseMapper()
         {
-            ToTable("Courses");
+            ToTable("Course");
 
-            HasKey(c => c.Id);
-            Property(c => c.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            Property(c => c.Id).IsRequired();
+            //HasKey(c => c.Id);
+            //Property(c => c.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            //Property(c => c.Id).IsRequired();
 
             Property(c => c.Name).IsRequired();
             Property(c => c.Name).HasMaxLength(255);

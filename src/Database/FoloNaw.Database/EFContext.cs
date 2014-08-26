@@ -9,9 +9,12 @@ namespace FoloNow.Database
     public class EFContext : DbContext
     {
         public EFContext()
-            //: base("name=EFContext")
+            : base("EFContext")
         {
             var _ = typeof (System.Data.Entity.SqlServer.SqlProviderServices);
+            System.Data.Entity.Database.SetInitializer<EFContext>(new CreateDatabaseIfNotExists<EFContext>());
+            //System.Data.Entity.Database.SetInitializer<EFContext>(new DropCreateDatabaseAlways<EFContext>());
+            //System.Data.Entity.Database.SetInitializer<EFContext>(new DropCreateDatabaseIfModelChanges<EFContext>());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -52,6 +55,7 @@ namespace FoloNow.Database
                     //        .Invoke(modelBuilder.Configurations, new object[] {entityConfig});
                     dynamic configurationInstance = Activator.CreateInstance(type);
                     modelBuilder.Configurations.Add(configurationInstance);
+                    modelBuilder.Conventions.Add<DomainConventions>();
                 }
 
             }

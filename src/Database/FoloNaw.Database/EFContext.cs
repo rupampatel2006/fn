@@ -38,7 +38,7 @@ namespace FoloNow.Database
 
             foreach (var assembly in AppDomain.CurrentDomain
                 .GetAssemblies()
-                .Where(a => a.GetName().Name != "EntityFramework"))
+                .Where(a => a.GetName().Name == "FoloNow.Database.Models"))
             {
                 var configTypes = assembly
                     .GetTypes()

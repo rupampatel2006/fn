@@ -8,7 +8,7 @@
               });
           }
       };
-  }
+  }//
 ]).directive('customBackground', function () {
     return {
         restrict: "A",

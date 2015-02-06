@@ -1,4 +1,4 @@
-﻿// Main configuration file. Sets up AngularJS module and routes and any other config objects
+﻿// Main configuration file. Sets up AngularJS module and routes and any other config objects.
 
 var mainApp = angular.module('mainApp', [
     //Angular Module
